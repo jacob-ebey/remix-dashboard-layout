@@ -1,5 +1,5 @@
 import type * as React from "react";
-import { Link } from "@remix-run/react";
+import { NavLink } from "@remix-run/react";
 
 export function Panel({
 	children,
@@ -64,7 +64,7 @@ export function PanelItemLink({
 }) {
 	return (
 		<article className="panel__list-item">
-			<Link to={to}>{children}</Link>
+			<NavLink to={to}>{children}</NavLink>
 		</article>
 	);
 }

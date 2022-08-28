@@ -151,6 +151,11 @@ a {
 	display: block;
 	padding: 1rem;
 }
+.panel__list-item > a.active {
+	background-color: var(--bg-hover);
+	display: block;
+	padding: 1rem;
+}
 .panel__list-item:hover {
 	background-color: var(--bg-hover);
 }
