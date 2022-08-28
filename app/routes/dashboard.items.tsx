@@ -12,17 +12,15 @@ import iconsHref from "~/icons.svg";
 export default function List() {
 	const location = useLocation();
 	const [searchParams] = useSearchParams();
-	const panelOpen = searchParams.get("open") === "list";
 
-	const menuLinkClass =
-		"icon mr " +
-		(location.pathname.endsWith("/items") ? "lg:hidden" : "xl:hidden");
+	const forceShow = location.pathname === "/dashboard/items";
+	const panelOpen = searchParams.get("open") === "list";
 
 	return (
 		<>
-			<Panel size="sm" open={panelOpen}>
+			<Panel size="sm" open={panelOpen} force={forceShow}>
 				<PanelHeader>
-					<Link to="?open=menu" className={menuLinkClass}>
+					<Link to="?open=menu" className="icon mr xl:hidden">
 						<svg height={20} width={20}>
 							<use href={iconsHref + "#menu"} />
 						</svg>
