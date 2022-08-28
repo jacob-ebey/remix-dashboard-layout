@@ -29,7 +29,7 @@ export default function Menu() {
 					{forceShow ? null : (
 						<Link to={location.pathname} className={closeLinkClass}>
 							<svg height={20} width={20}>
-								<use stroke="currentColor" href={iconsHref + "#close"} />
+								<use href={iconsHref + "#close"} />
 							</svg>
 						</Link>
 					)}

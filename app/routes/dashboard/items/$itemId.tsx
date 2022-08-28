@@ -13,7 +13,7 @@ export default function List() {
 				<PanelHeader>
 					<Link to=".." className="icon mr">
 						<svg height={20} width={20}>
-							<use stroke="currentColor" href={iconsHref + "#back"} />
+							<use href={iconsHref + "#back"} />
 						</svg>
 					</Link>
 					Item {itemId}

@@ -24,7 +24,7 @@ export default function List() {
 				<PanelHeader>
 					<Link to="?open=menu" className={menuLinkClass}>
 						<svg height={20} width={20}>
-							<use stroke="currentColor" href={iconsHref + "#menu"} />
+							<use href={iconsHref + "#menu"} />
 						</svg>
 					</Link>
 					List
